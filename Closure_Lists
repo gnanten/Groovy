@@ -1,0 +1,16 @@
+class Closure_Lists
+{
+    public static void main(String[] args)
+    {
+       def lst=1..10
+     lst.each
+     {
+         x->
+         if(x%2==0)
+         {
+             print x+"\n"
+         }
+     }
+    print lst.findAll{it>5}
+    }
+}
