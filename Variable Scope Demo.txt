@@ -1,0 +1,26 @@
+class Inttest
+{
+    static int x=10
+    int y=20
+    protected void getval()
+    {
+        int y=12
+        print "Local Variable. scope limited to func--> "+"y = "+y+"\n"
+        print "Instance Variable. scope limited to Object --> "+"this.y = "+this.y+"\n"
+        print "Class Variable. scope limited to Entire Class --> "+"x = "+x
+    }
+    
+    static void main(String[] args)
+    {
+        Inttest iy=new Inttest()
+         iy.getval()
+    }
+}
+
+
+O/p---
+
+$groovy main.groovy
+Local Variable. scope limited to func--> y = 12
+Instance Variable. scope limited to Object --> this.y = 20
+Class Variable. scope limited to Entire Class --> x = 10

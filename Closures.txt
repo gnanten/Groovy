@@ -1,0 +1,18 @@
+class Closure
+{
+    public void test(a)
+    {
+        a.call("Gnan","Gem")
+    }
+    
+    public static void main(String[] args)
+    {
+        def closure =
+        {
+            x,y->
+            print x+" is a "+y
+        }
+        Closure c=new Closure()
+        c.test(closure)
+    }
+}
